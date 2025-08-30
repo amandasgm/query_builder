@@ -5,3 +5,6 @@
 - gerenciam mudanças em banco de dados
 
 3. exporting default the configuration of knex.ts
+
+4. creating one script to understand the export default of knexfile.ts file
+- running the new script to create a new migrate: **npm run knex --migrate:make create-courses**
