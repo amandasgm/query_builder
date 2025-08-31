@@ -35,3 +35,5 @@ OR TO UNDO A SPECIFIC MIGRATION
 10. making a post request
 11. connecting database with server
 12. Then we send the request via Insomnia, and that's it, the name will already be entered in the database. ----> on Insomnia:
+
+13. making a get request with knex on Insomnia
