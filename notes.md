@@ -31,3 +31,7 @@ OR TO UNDO ALL
 **npm run knex -- migrate:rollback --all**
 OR TO UNDO A SPECIFIC MIGRATION
 **npm run knex -- migrate:down** + migration name **20250831162622_add-updated-courses.ts**
+
+10. making a post request
+11. connecting database with server
+12. Then we send the request via Insomnia, and that's it, the name will already be entered in the database. ----> on Insomnia:
