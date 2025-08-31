@@ -26,3 +26,8 @@
 
 9. add updated table courses with a new column after the created_at column
 9.1 always undoes the action created on "up" 
+**npm run knex -- migrate:rollback**
+OR TO UNDO ALL
+**npm run knex -- migrate:rollback --all**
+OR TO UNDO A SPECIFIC MIGRATION
+**npm run knex -- migrate:down** + migration name **20250831162622_add-updated-courses.ts**
