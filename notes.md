@@ -32,8 +32,28 @@ OR TO UNDO ALL
 OR TO UNDO A SPECIFIC MIGRATION
 **npm run knex -- migrate:down** + migration name **20250831162622_add-updated-courses.ts**
 
+POST
+---
 10. making a post request
 11. connecting database with server
-12. Then we send the request via Insomnia, and that's it, the name will already be entered in the database. ----> on Insomnia:
+12. Then we send the request via Insomnia, and that's it, the name will already be entered in the database. ----> on Insomnia
 
-13. making a get request with knex on Insomnia
+GET
+---
+14. making a get request with knex on Insomnia
+14.1 adding all methods that i want to see in the table 
+
+PUT
+---
+15. making a put request to update the name
+15.1 with the id like parameter
+
+DELETE
+---
+16. making a delete request to delete one course with the id like parameter
+
+
+Insomnia: create a request 
+
+
+
