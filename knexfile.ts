@@ -1,3 +1,5 @@
+
+// 3. exporting default knex.ts
 export default {
   client: "sqlite3",
   connection: {

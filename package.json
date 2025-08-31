@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "knex": "node --import tsx ./node_modules/.bin/knex"
+    "knex": "node --import tsx ./node_modules/.bin/knex",
+    "kmake": "npm run knex -- migrate:make",
+    "klatest": "npm run knex -- migrate:latest"
   },
   "author": "Rodrigo",
   "license": "ISC",
