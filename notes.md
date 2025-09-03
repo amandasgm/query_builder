@@ -52,8 +52,14 @@ DELETE
 ---
 16. making a delete request to delete one course with the id like parameter
 
+AFTER ALL:
+Insomnia: create a request for each method 
 
-Insomnia: create a request 
+17. seed: to populate tables with multiple records at the same time with knex
+Runing seeds: npm run knex -- seed:make insert-courses    
+17.1 inserts courses with name at the same time      
+
+
 
 
 

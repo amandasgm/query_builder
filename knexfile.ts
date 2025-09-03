@@ -10,4 +10,8 @@ export default {
     directory: "./src/database/migrations",
     extension: "ts",
   },
+  seeds: {
+    directory: "./src/database/seeds",
+    extension: "ts",
+  },
 }
