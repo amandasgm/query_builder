@@ -60,6 +60,24 @@ app.get("/modules", async (request: Request, response: Response) => {
   return response.json(modules)
 })
 
+//? CONNECTING TWO TABLES
+// ! 22. making a connection with join between two tables
+app.get("/courses/:id/modules", async (request: Request, response: Response) => { 
+  const courses = await knex("courses")
+  .select(
+    "courses.id as course_id", // id do curso
+    "course_modules.id as module_id", // id do modulo
+    "course_modules.name AS module", // nome do modulo
+    "courses.name as course" // nome do curso
+  )
+  .join(
+    "course_modules", // tabela de modulos
+    "courses.id", // id da tabela de curso
+    "course_modules.course_id" // tabela pivô que conecta cursos ↔ módulos
+  )
+
+  return response.json(courses)
+})
 
 
 

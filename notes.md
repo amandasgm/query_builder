@@ -69,3 +69,19 @@ Runing seeds: **npm run knex -- seed:make insert-courses**
 
 20. get request
 21. making it clear that we want to restrict relationship keys so that Insomnia does not add modules to courses that do not exist  
+
+22. connecting two tables
+- courses → tabela de cursos
+- modules → tabela de módulos
+- courses_modules → tabela pivô que conecta cursos ↔ módulos
+
+SQL EQUIVALENTE:
+```
+SELECT *
+FROM courses
+INNER JOIN courses_modules
+  ON courses.id = courses_modules.courses_id;
+```
+
+**select: show in SQL the what we want**
+**join: join two o more tables**
