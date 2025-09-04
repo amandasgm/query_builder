@@ -56,10 +56,16 @@ AFTER ALL:
 Insomnia: create a request for each method 
 
 17. seed: to populate tables with multiple records at the same time with knex
-Runing seeds: npm run knex -- seed:make insert-courses    
-17.1 inserts courses with name at the same time      
+Runing seeds: **npm run knex -- seed:make insert-courses**   
+17.1 inserts courses with name at the same time   
 
+18. make relationship:
+18.1 create a new table to modules
+18.2 the foreign key must be of the same type as the primary key.
+**18.3 running npm run klatest**
 
+19. creating a new route
+19.1 at insomnia we created a new http request
 
-
-
+20. get request
+21. making it clear that we want to restrict relationship keys so that Insomnia does not add modules to courses that do not exist  

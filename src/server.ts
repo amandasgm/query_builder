@@ -4,6 +4,7 @@ import { knex } from "./database/knex"
 const app = express()
 app.use(express.json())
 
+// ? COURSES
 // ! 10. post request: RESULT: INSERTING IN THE TABLE
 app.post("/courses", async (request: Request, response: Response) => {
   const { name } = request.body
@@ -42,5 +43,25 @@ app.delete("/courses/:id", async (request: Request, response: Response) => {
   await knex("courses").delete().where({ id })
   return response.json()
 })
+
+
+// ? MODULES
+// ! 19. post request: RESULT: MAKING A RELATIONSHIP BETWEEN COURSES AND MODULES
+app.post("/modules", async (request: Request, response: Response) => {
+  // 19.2 
+  const { name, course_id } = request.body
+  await knex("course_modules").insert({ name, course_id })
+  return response.status(201).json()
+})
+
+// ! 20. get request: RESULT: TABLE MODULES
+app.get("/modules", async (request: Request, response: Response) => { 
+  const modules = await knex("course_modules").select()
+  return response.json(modules)
+})
+
+
+
+
 
 app.listen(3333, () => console.log(`Server is running on port 3333`))
